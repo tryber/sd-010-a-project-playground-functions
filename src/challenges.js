@@ -1,19 +1,9 @@
 // Desafio 1
 function compareTrue(val1, val2) {
-  let aux1 = Boolean;
-  aux1 = val1;
-
-  let aux2 = Boolean;
-  aux2 = val2;
-
-  let res = Boolean;
-
-  if ((aux1 === true) && (aux2 === true)) {
-    res = true;
-  } else {
-    res = false;
+  if (val1 === true && val2 === true) {
+    return true;
   }
-  return (console.log(res));
+  return false;
 }
 
 // Desafio 2
