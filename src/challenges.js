@@ -33,8 +33,18 @@ function splitSentence(frase) {
 splitSentence('Eita Nois');
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(paramNomes) {
+  let nomes = [];
+  let primeiroNome = '';
+  let ultimoNome = '';
+
+  for (let index = 0; index < paramNomes.length; index += 1) {
+    nomes.push(paramNomes[index]);
+  }
+  primeiroNome = nomes[nomes.length - 1];
+  ultimoNome = nomes[0];
+  let fullName = primeiroNome + ', ' + ultimoNome;
+  return fullName;
 }
 
 // Desafio 5
