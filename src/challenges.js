@@ -30,8 +30,6 @@ function splitSentence(frase) {
   return armazenaPalavra;
 }
 
-splitSentence('Eita Nois');
-
 // Desafio 4
 function concatName(paramNomes) {
   return `${paramNomes[paramNomes.length - 1]}, ${paramNomes[0]}`;
@@ -81,57 +79,16 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz(paramNumbers) {
-  let arrayDeNumeros = [];
-  for (let index in paramNumbers) {
-    if (paramNumbers[index] % 3 === 0 && paramNumbers[index] % 5 === 0) {
-      arrayDeNumeros.push('fizzBuzz');
-    } else if (paramNumbers[index] % 3 === 0) {
-      arrayDeNumeros.push('fizz');
-    } else if (paramNumbers[index] % 5 === 0) {
-      arrayDeNumeros.push('buzz');
-    } else {
-      arrayDeNumeros.push('bug!');
-    }
-  }
-  return arrayDeNumeros;
+function fizzBuzz() {
+
 }
 // Desafio 9
-function encode(frase) {
-  let encodingPhrase = string.split('');
+function encode() {
 
-  for (let index in encodingPhrase) {
-    if (encodingPhrase[index] === 'a') {
-      encodingPhrase[index] = 1;
-    } else if (encodingPhrase[index] === 'e') {
-      encodingPhrase[index] = 2;
-    } else if (encodingPhrase[index] === 'i') {
-      encodingPhrase[index] = 3;
-    } else if (encodingPhrase[index] === 'o') {
-      encodingPhrase[index] = 4;
-    } else if (encodingPhrase[index] === 'u') {
-      encodingPhrase[index] = 5;
-    }
-  }
-  return encodingPhrase.join('');
 }
 
-function decode(string) {
-  let splitStringArray = string.split('');
-  for (let index in splitStringArray) {
-    if (splitStringArray[index] === '1') {
-      splitStringArray[index] = 'a';
-    } else if (splitStringArray[index] === '2') {
-      splitStringArray[index] = 'e';
-    } else if (splitStringArray[index] === '3') {
-      splitStringArray[index] = 'i';
-    } else if (splitStringArray[index] === '4') {
-      splitStringArray[index] = 'o';
-    } else if (splitStringArray[index] === '5') {
-      splitStringArray[index] = 'u';
-    }
-  }
-  return splitStringArray.join('');
+function decode() {
+
 }
 
 module.exports = {
