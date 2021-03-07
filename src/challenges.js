@@ -7,14 +7,30 @@ function compareTrue(val1, val2) {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  return (base * height) / 2;
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(frase) {
+  let str = '';
+  str = frase;
+  str += ' ';
+  let letra = [];
+  let armazenaPalavra = [];
+
+  for (let index = 0; index < str.length; index += 1) {
+    if (str[index] !== ' ') {
+      letra += str[index];
+    } else {
+      armazenaPalavra.push(letra);
+      letra = [];
+    }
+  }
+  return armazenaPalavra;
 }
+
+splitSentence('Eita Nois');
 
 // Desafio 4
 function concatName() {
