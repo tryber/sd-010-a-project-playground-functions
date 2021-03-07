@@ -34,27 +34,34 @@ splitSentence('Eita Nois');
 
 // Desafio 4
 function concatName(paramNomes) {
-  let nomes = [];
-  let primeiroNome = '';
-  let ultimoNome = '';
-
-  for (let index = 0; index < paramNomes.length; index += 1) {
-    nomes.push(paramNomes[index]);
-  }
-  primeiroNome = nomes[nomes.length - 1];
-  ultimoNome = nomes[0];
-  let fullName = primeiroNome + ', ' + ultimoNome;
-  return fullName;
+  return `${paramNomes[paramNomes.length - 1]}, ${paramNomes[0]}`;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let vit = wins * 3;
+  let emp = ties * 1;
+  return vit + emp;
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numeros) {
+  let arrayDeNum = [];
+  arrayDeNum = numeros;
+  let maiorNum = 0;
+  let cont = 0;
+
+  for (let index in arrayDeNum) {
+    if (arrayDeNum[index] > maiorNum) {
+      maiorNum = arrayDeNum[index];
+    }
+  }
+  for (let index in arrayDeNum) {
+    if (arrayDeNum[index] === maiorNum) {
+      cont += 1;
+    }
+  }
+  return cont;
 }
 
 // Desafio 7
