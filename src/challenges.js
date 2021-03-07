@@ -30,6 +30,8 @@ function splitSentence(frase) {
   return armazenaPalavra;
 }
 
+splitSentence('Eita Nois');
+
 // Desafio 4
 function concatName(paramNomes) {
   return `${paramNomes[paramNomes.length - 1]}, ${paramNomes[0]}`;
@@ -79,16 +81,57 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-
+function fizzBuzz(paramNumbers) {
+  let arrayDeNumeros = [];
+  for (let index in paramNumbers) {
+    if (paramNumbers[index] % 3 === 0 && paramNumbers[index] % 5 === 0) {
+      arrayDeNumeros.push('fizzBuzz');
+    } else if (paramNumbers[index] % 3 === 0) {
+      arrayDeNumeros.push('fizz');
+    } else if (paramNumbers[index] % 5 === 0) {
+      arrayDeNumeros.push('buzz');
+    } else {
+      arrayDeNumeros.push('bug!');
+    }
+  }
+  return arrayDeNumeros;
 }
 // Desafio 9
-function encode() {
+function encode(frase) {
+  let encodingPhrase = frase.split('');
 
+  for (let index in encodingPhrase) {
+    if (encodingPhrase[index] === 'a') {
+      encodingPhrase[index] = 1;
+    } else if (encodingPhrase[index] === 'e') {
+      encodingPhrase[index] = 2;
+    } else if (encodingPhrase[index] === 'i') {
+      encodingPhrase[index] = 3;
+    } else if (encodingPhrase[index] === 'o') {
+      encodingPhrase[index] = 4;
+    } else if (encodingPhrase[index] === 'u') {
+      encodingPhrase[index] = 5;
+    }
+  }
+  return encodingPhrase.join('');
 }
 
-function decode() {
-
+function decode(frase) {
+  let decodingPhrase = frase.split('');
+  for (let index in decodingPhrase) {
+    if (decodingPhrase[index] === '1') {
+      decodingPhrase[index] = 'a';
+    } else if (decodingPhrase[index] === '2') {
+      decodingPhrase[index] = 'e';
+    } else if (decodingPhrase[index] === '3') {
+      decodingPhrase[index] = 'i';
+    } else if (decodingPhrase[index] === '4') {
+      decodingPhrase[index] = 'o';
+    } else if (decodingPhrase[index] === '5') {
+      decodingPhrase[index] = 'u';
+    }
+  }
+  return decodingPhrase.join('');
 }
 
 module.exports = {
