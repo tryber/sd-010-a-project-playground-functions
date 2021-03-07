@@ -1,11 +1,26 @@
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(technologies, name) {
+  let techs = [];
+  technologies.sort();
+
+  if (technologies.length <= 0) {
+    return 'Vazio!';
+  }
+  for (let index = 0; index < technologies.length; index += 1) {
+    techs.push(
+      {
+        tech: technologies[index],
+        name: name,
+      },
+    );
+  } return techs;
 }
 
+// desafio realizado com contriuição de alguns colegas (nilson/mauricio)
+
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(foneNumber) {
+  
 }
 
 // Desafio 12
