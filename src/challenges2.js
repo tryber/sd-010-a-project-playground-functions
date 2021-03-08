@@ -1,7 +1,17 @@
+const { TestScheduler } = require("jest");
+
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
+function techList(techName,name) {
+  let listTech = [];
+  techName.sort();
+    for (let index = 0; index < techName.length; index += 1) {
+      listTech.push({listTech: techName[index], name: name });
+    }
+      return listTech;
+    if(techName.length <=0) {
+      return 'vazio';
+    }
+  }
 
 // Desafio 11
 function generatePhoneNumber() {
