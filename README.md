@@ -298,7 +298,7 @@ Exemplo: caso o parâmetro seja [2, 15, 7, 9, 45], sua função deverá retornar
 
 ### 9 - Crie uma função que Codifique e Decodifique
 
-Crie duas funções: a primeira deverá se chamar `encode` e, ao receber uma string como parâmetro, deverá trocar todas as vogais minúsculas por números, de acordo com o formato a seguir:
+Crie duas funções: a primeira deverá se chamar `encode` e, ao receber uma string como parâmetro,deverá trocar todas as vogais minúsculas por números, de acordo com o formato a seguir:
 
 a -> 1 \
 e -> 2 \
