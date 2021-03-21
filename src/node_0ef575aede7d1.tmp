@@ -1,0 +1,94 @@
+function compareTrue(value1, value2) {
+  if (value1 === true && value2 === true) {
+    return true;
+  }
+
+  return false;
+}
+console.log(compareTrue(true, false));
+
+// exercicio2
+function calcArea(base, height) {
+  let area = 0;
+  area = base * height / 2;
+  return area;
+}
+console.log(calcArea(51, 1));
+
+// Desafio 3
+function splitSentence(string) {
+  return string.split(' ');
+}
+console.log(splitSentence('foguete'));
+
+// Desafio 4
+function concatName(names) {
+  let first = `${names[0]}. ${names[names.length - 1]}`;
+  return first;
+}
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+
+// Desafio 5
+function footballPoints(wins, ties) {
+  let pontosWins = wins * 3;
+  let pontosTies = ties * 1;
+  return pontosWins + pontosTies;
+}
+console.log(footballPoints(14, 8));
+
+// Desafio 6
+function highestCount(arrayNumber) {
+  let currentLongest = arrayNumber[0];
+
+  for (let index = 0; index < arrayNumber.length; index += 1) {
+    if (arrayNumber[index] > currentLongest) {
+      currentLongest = arrayNumber[index];
+    }
+  }
+  return currentLongest;
+}
+function repeating(numberRepeating) {
+  let longest = numberRepeating;
+  let cont = 0;
+  for (let index = 0; index <= numberRepeating.length; index += 1) {
+    for (let index2 = 0; index2 < numberRepeating.length; index2 += 1){
+      if (numberRepeating[index] === longest[index2]){
+        numberRepeating[index] = longest.length[index2]
+        cont += 1;
+      }
+    }
+  }
+  return cont;
+}
+console.log(highestCount([9, 1, 2, 12, 9, 5, 7]));
+console.log(repeating([9, 1, 2, 3, 12, 5, 7]));
+// Desafio 7
+function catAndMouse() {
+  // seu código aqui
+}
+
+// Desafio 8
+function fizzBuzz() {
+  // seu código aqui
+}
+
+// Desafio 9
+function encode() {
+  // seu código aqui
+}
+function decode() {
+  // seu código aqui
+}
+
+module.exports = {
+  calcArea,
+  catAndMouse,
+  compareTrue,
+  concatName,
+  decode,
+  encode,
+  fizzBuzz,
+  footballPoints,
+  highestCount,
+  splitSentence,
+};
