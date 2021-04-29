@@ -1,16 +1,29 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(param1 , param2) {
+  if(param1 === param2 && param1 === true) {
+  return true;
+
 }
+else {
+  return false;
+ 
+}
+};
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
-}
+function calcArea(base , height) {  
+let resultado = (base*height)/2;
+  return resultado; 
+};
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(frase) {
+let array = [];
+let espaco = ',';
+for (let index = 0; index < frase.length; index += 1){
+  if (frase[index] != ''){
+    frase = frase + espaco;
+    console.log(array)
 }
 
 // Desafio 4
